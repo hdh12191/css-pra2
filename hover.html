@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOVER</title>
+    <style>
+      body {
+        display: grid;
+        grid-auto-rows: minmax(100px, auto);
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      button.primary {
+        background-color: aquamarine;
+      }
+      button.primary:hover {
+        transition: all ease-in 0.3s;
+        background-color: antiquewhite;
+      }
+      button.secondary {
+        background-color: chartreuse;
+      }
+      button.secondary:hover {
+        transition: all ease-out 0.5s;
+        background-color: rgb(177, 146, 45);
+      }
+      button.tertiary {
+        background-color: chocolate;
+      }
+      button.tertiary:hover {
+        transition: all ease-in-out 0.3s;
+        background-color: rgb(158, 18, 95);
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="primary">마우스를 올려보세요</button>
+    <button type="button" class="primary">마우스를 올려보세요</button>
+    <button type="button" class="secondary">마우스를 올려보세요</button>
+    <button type="button" class="secondary">마우스를 올려보세요</button>
+    <button type="button" class="tertiary">마우스를 올려보세요</button>
+    <button type="button" class="tertiary">마우스를 올려보세요</button>
+  </body>
+</html>

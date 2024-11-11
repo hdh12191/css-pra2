@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BOX MODEL</title>
+
+    <style>
+      body {
+        display: grid;
+        grid-template-rows: repeat(3, minmax(100px, auto));
+        text-align: center;
+      }
+      div.margin {
+        border: 1px solid black;
+      }
+      div.border {
+        border: 1px solid black;
+        margin: 10px;
+      }
+      div.padding {
+        border: 1px solid black;
+        margin: 10px;
+      }
+      div.content {
+        border: 1px solid black;
+        padding: 10px;
+        background-color: yellow;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+      margin
+      <div class="border">
+        border
+        <div class="padding">
+          padding
+          <div class="content">content</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

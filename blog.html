@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONG's BLOG</title>
+    <style>
+      body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 200px 1fr 75px;
+        text-align: center;
+      }
+      header {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-color: rgb(101, 101, 210);
+      }
+      header p {
+        font-size: 35px;
+        font-weight: 700;
+        padding: 8px;
+      }
+
+      header nav {
+        border-bottom: 1px solid rgb(171, 171, 215);
+      }
+
+      header nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        list-style: none;
+        padding: 8px;
+      }
+
+      header nav ul li {
+        border-right: 1px solid rgb(171, 171, 215);
+      }
+      header nav ul li:last-child {
+        border: 0;
+      }
+
+      div.main-content {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+      }
+
+      div.main-content aside {
+        border: 1px solid black;
+        display: grid;
+      }
+
+      div.main-content aside ul {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        padding: 8px;
+        list-style: none;
+      }
+
+      div.main-content main article section {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+      }
+
+      footer {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>HOME</li>
+          <li>POST</li>
+          <li>TEST</li>
+          <li>EX</li>
+        </ul>
+      </nav>
+      <p>DONG's BLOG</p>
+    </header>
+    <div class="main-content">
+      <aside>
+        <ul>
+          <li>MENU 1</li>
+          <li>MENU 2</li>
+          <li>MENU 3</li>
+          <li>MENU 4</li>
+          <li>MENU 5</li>
+        </ul>
+      </aside>
+      <main>
+        <article>
+          <section>
+            <img
+              src="https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="beach"
+              role="img"
+            />
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <footer>&copy; DONG's Blog</footer>
+  </body>
+</html>
